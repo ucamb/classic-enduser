@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Configuring Thumbnail Creation - Omeka Classic User Manual</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  <link href="../../css/extra.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Configuring Thumbnail Creation";
+    var mkdocs_page_input_path = "Technical/ConfiguringThumbnailCreation.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Omeka Classic User Manual</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <p class="caption"><span class="caption-text">Getting Started</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../GettingStarted/Site_Planning_Tips/">Site Planning Tips</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../GettingStarted/UsingOmeka/">Examples and Case Studies</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../GettingStarted/Hosting_Suggestions/">Hosting Suggestions</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../GettingStarted/Feature_List/">Feature List</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../GettingStarted/Accessibility_Statement/">Accessibility Statement</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../GettingStarted/Screencasts/">Screencasts</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../GettingStarted/Searching/">Searching</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Installing</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Installation/System_Requirements/">System Requirements</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Installation/Installation/">Installation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Installation/Upgrading/">Upgrading</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Installation/Configuring_Language/">Configuring Language</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Installation/Setting_Directory_Permissions/">Setting Directory Permissions</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Content</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Content/Items/">Items</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Content/Files/">Files</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Content/Working_with_Dublin_Core/">Working with Dublin Core</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Content/Using_HTML_Editor-TinyMCE/">Using the HTML Editor</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Content/Item_Types/">Item Types</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Content/Collections/">Collections</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Content/Tags/">Tags</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Content/Shortcodes/">Shortcodes</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Administration</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Adding_and_Managing_Plugins/">Working with Plugins</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Appearance/Themes/">Themes</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Appearance/Navigation/">Navigation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Appearance/Appearance_Settings/">Appearance Settings</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Users/">Users</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Settings/General_Settings/">General Settings</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Settings/Security_Settings/">Security Settings</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Settings/Search_Settings/">Search Settings</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Settings/Element_Sets/">Element Sets</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Settings/Item_Type_Elements/">Item Type Elements</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Settings/API_Settings/">API Settings</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Settings/ReCaptcha/">ReCaptcha</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Plugins</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Coins/">Coins</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/CollectionTree/">Collection Tree</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Commenting/">Commenting</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Contribution/">Contribution</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/CSS_Editor/">CSS Editor</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/CSV_Import/">CSV Import</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/DerivativeImages/">Derivative Images</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/DocsViewer/">Docs Viewer</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Dropbox/">Dropbox</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/DublinCoreExtended/">Dublin Core Extended</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Editorial/">Editorial</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/EmbedCodes/">Embed Codes</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/ExhibitBuilder/">Exhibit Builder</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/ExhibitImageAnnotation/">Exhibit Image Annotation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Geolocation/">Geolocation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/GuestUser/">Guest User</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Heist/">Heist</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/ItemOrder/">Item Order</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/ItemRelations/">Item Relations</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Library_of_Congress_Suggest/">Library of Congress Suggest</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Ngram/">Ngram</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/OaipmhHarvester/">OAI-PMH Harvester</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/OaiPmhRepository/">OAI-PMH Repository</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Omeka_API_Import/">Omeka API Import</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/PBCore/">PBCore</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/PdfText/">PDF Text</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Plugin_Shortcodes/">Plugin Shortcodes</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Posters/">Posters</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/RecordRelations/">Record Relations</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/RedactElements/">Redact Elements</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Reports/">Reports</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Scripto/">Scripto</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/SearchByMetadata/">Search by Metadata</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/ShortcodeCarousel/">Shortcode Carousel</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/SimpleContactForm/">Simple Contact Form</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/SimplePages/">Simple Pages</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/SimpleVocab/">Simple Vocab</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/SocialBookmarking/">Social Bookmarking</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/TextAnalysis/">Text Analysis</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/TextAnnotation/">Text Annotation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/UserProfiles/">User Profiles</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/VRACore/">VRA Core</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/ZoomIt/">ZoomIt</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/ZoteroImport/">Zotero Import</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Troubleshooting</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Troubleshooting/Troubleshooting_Omeka/">Troubleshooting</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Troubleshooting/Retrieving_Error_Messages/">Retreiving Error Messages</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Troubleshooting/Report-a-bug/">Report a Bug</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Technical</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../Adding_LightBox_to_Omeka/">Adding Lightbox to Omeka</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Backing_up_an_Omeka_Database/">Backing up an Omeka Classic Database</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Configuring_File_Storage/">Configuring File Storage</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Configuring Thumbnail Creation</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#choosing-a-strategy">Choosing a Strategy</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#changing-options">Changing Options</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#gravity">Gravity</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#page">Page</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#version">Version</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#auto-orient">Auto-Orient</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Contribute_Code_to_Omeka/">Contribute Code to Omeka</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../DatabaseConfigurationFile/">Database Configuration File</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Legacy_documentation/">Legacy Documentation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Moving_to_Another_Server/">Moving to Another Server</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Output_Formats/">Output Formats</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Setting_PHP_Path/">Setting the PHP Path</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Translate_Omeka/">Translate Omeka</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Using_Omeka_with_Other_Tools_and_Platforms/">Using Omeka with Other Tools and Platforms</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Omeka Classic User Manual</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Technical &raquo;</li>
+        
+      
+    
+    <li>Configuring Thumbnail Creation</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/omeka/classic-enduser/edit/master/docs/Technical/ConfiguringThumbnailCreation.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="configuring-thumbnail-creation">Configuring Thumbnail Creation<a class="headerlink" href="#configuring-thumbnail-creation" title="Permanent link"></a></h1>
+<h2 id="choosing-a-strategy">Choosing a Strategy<a class="headerlink" href="#choosing-a-strategy" title="Permanent link"></a></h2>
+<p>Omeka Classic uses the command-line tool <code>convert</code> from ImageMagick by default to create thumbnail images for uploaded files. Instead, you can choose to use the PECL ext/imagick extension (Omeka 2.2 and above) or the PHP GD extension (Omeka 2.3 and above).</p>
+<p>The Imagick and GD options both avoid the need to call out to a command-line. PHP's GD extension is less advanced than ImageMagick but is more widely available.</p>
+<p>To change how Omeka will generate thumbnails, set the option <code>fileDerivatives.strategy</code> in the application/config/config.ini file. Note: there may be a <code>fileDerivatives.strategy</code> line already in the config.ini file. If that line starts with a semicolon, it is a comment, not an actual setting. Either remove the semicolon and edit the line to use the desired strategy, or just add a new line.</p>
+<p>To use the GD strategy, use the following line:</p>
+<p><code>fileDerivatives.strategy = "Omeka_File_Derivative_Strategy_GD”</code></p>
+<p>To use the IMagick strategy, use the following line:</p>
+<p><code>fileDerivatives.strategy = "Omeka_File_Derivative_Strategy_Imagick”</code></p>
+<p>The new strategy will only apply to files added to Omeka after the configuration is changed.</p>
+<h2 id="changing-options">Changing Options<a class="headerlink" href="#changing-options" title="Permanent link"></a></h2>
+<p>In addition to the entire strategy used to create the thumbnails, more fine-grained options are also configurable in application/config/config.ini.</p>
+<p>Options are set using lines starting with
+<code>fileDerivatives.strategyOptions</code>.</p>
+<h3 id="gravity">Gravity<a class="headerlink" href="#gravity" title="Permanent link"></a></h3>
+<p>The <code>gravity</code> option lets administrators specify which region of an image to keep when creating a square thumbnail. The possible options are compass directions (north, south, east, west, northeast, northwest, southeast, and southwest), and the default, center.</p>
+<p>Directions that contain "north" or "south" will use the topmost or bottom-most portion, respectively of portrait-oriented images. Directions containing "west" or "east" will use the leftmost or rightmost portion, respectively, of landscape-oriented images. A setting of "center" or no setting will use the center of the image.</p>
+<p>For example, to always make square thumbnails using the topmost part of the uploaded image, set the following line:</p>
+<p><code>fileDerivatives.strategyOptions.gravity = "north”</code></p>
+<h3 id="page">Page<a class="headerlink" href="#page" title="Permanent link"></a></h3>
+<p>The default external ImageMagick strategy can switch which "page" of an image to use when creating a thumbnail. The "page" could correspond with actual pages for documents like PDFs, or to frames of an animation or video. The page numbers start at 0, so 0 is the first page, 1 is the second page, and so on. By default, Omeka uses page zero, the first page.</p>
+<p>For example, to use the second page when creating thumbnails, set the following line:</p>
+<p><code>fileDerivatives.strategyOptions.page = 1</code></p>
+<h3 id="version">Version<a class="headerlink" href="#version" title="Permanent link"></a></h3>
+<p>When using the default external ImageMagick strategy, you can optionally inform Omeka which version of ImageMagick is being used. If it is recent enough, Omeka can switch to creating square thumbnails in a way that is more efficient and produces better results, particularly for images that are much longer in one dimension than the other. Running the command <code>convert -version</code> will indicate the version of ImageMagick that is installed.</p>
+<p><code>fileDerivatives.strategyOptions.version = “6.9.0-0”</code></p>
+<h3 id="auto-orient">Auto-Orient<a class="headerlink" href="#auto-orient" title="Permanent link"></a></h3>
+<p><em>Requires Omeka 2.3.1 or newer</em></p>
+<p>The default external ImageMagick strategy and the Imagick strategy both support a flag called <code>autoOrient</code>, which defaults to off. When turned on, Omeka will look for embedded orientation information in uploaded files, and rotate or transform the thumbnails it creates to account for that orientation.</p>
+<p>A common use-case for this is images taken with mobile phone cameras, which often embed an orientation flag to allow computers to automatically rotate the image. Some image manipulation or preview software also will store rotations as only a change to the image's embedded rotation information. Turning <code>autoOrient</code> on allows Omeka to produce thumbnails in the expected orientation when these types of images are uploaded.</p>
+<p><code>fileDerivatives.strategyOptions.autoOrient = true</code></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Contribute_Code_to_Omeka/" class="btn btn-neutral float-right" title="Contribute Code to Omeka">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../Configuring_File_Storage/" class="btn btn-neutral" title="Configuring File Storage"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  <p><a rel="license" href="http://creativecommons.org/licenses/by-nc/2.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/2.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/2.0/">Creative Commons Attribution-NonCommercial 2.0 Generic License</a>.</p>
+  <p>Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.</p>
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/omeka/classic-enduser/" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../Configuring_File_Storage/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../Contribute_Code_to_Omeka/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

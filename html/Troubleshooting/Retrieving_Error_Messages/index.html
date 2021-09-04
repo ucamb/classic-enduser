@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Retreiving Error Messages - Omeka Classic User Manual</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  <link href="../../css/extra.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Retreiving Error Messages";
+    var mkdocs_page_input_path = "Troubleshooting/Retrieving_Error_Messages.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Omeka Classic User Manual</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <p class="caption"><span class="caption-text">Getting Started</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../GettingStarted/Site_Planning_Tips/">Site Planning Tips</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../GettingStarted/UsingOmeka/">Examples and Case Studies</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../GettingStarted/Hosting_Suggestions/">Hosting Suggestions</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../GettingStarted/Feature_List/">Feature List</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../GettingStarted/Accessibility_Statement/">Accessibility Statement</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../GettingStarted/Screencasts/">Screencasts</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../GettingStarted/Searching/">Searching</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Installing</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Installation/System_Requirements/">System Requirements</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Installation/Installation/">Installation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Installation/Upgrading/">Upgrading</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Installation/Configuring_Language/">Configuring Language</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Installation/Setting_Directory_Permissions/">Setting Directory Permissions</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Content</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Content/Items/">Items</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Content/Files/">Files</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Content/Working_with_Dublin_Core/">Working with Dublin Core</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Content/Using_HTML_Editor-TinyMCE/">Using the HTML Editor</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Content/Item_Types/">Item Types</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Content/Collections/">Collections</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Content/Tags/">Tags</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Content/Shortcodes/">Shortcodes</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Administration</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Adding_and_Managing_Plugins/">Working with Plugins</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Appearance/Themes/">Themes</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Appearance/Navigation/">Navigation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Appearance/Appearance_Settings/">Appearance Settings</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Users/">Users</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Settings/General_Settings/">General Settings</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Settings/Security_Settings/">Security Settings</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Settings/Search_Settings/">Search Settings</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Settings/Element_Sets/">Element Sets</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Settings/Item_Type_Elements/">Item Type Elements</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Settings/API_Settings/">API Settings</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Settings/ReCaptcha/">ReCaptcha</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Plugins</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Coins/">Coins</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/CollectionTree/">Collection Tree</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Commenting/">Commenting</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Contribution/">Contribution</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/CSS_Editor/">CSS Editor</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/CSV_Import/">CSV Import</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/DerivativeImages/">Derivative Images</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/DocsViewer/">Docs Viewer</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Dropbox/">Dropbox</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/DublinCoreExtended/">Dublin Core Extended</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Editorial/">Editorial</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/EmbedCodes/">Embed Codes</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/ExhibitBuilder/">Exhibit Builder</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/ExhibitImageAnnotation/">Exhibit Image Annotation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Geolocation/">Geolocation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/GuestUser/">Guest User</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Heist/">Heist</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/ItemOrder/">Item Order</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/ItemRelations/">Item Relations</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Library_of_Congress_Suggest/">Library of Congress Suggest</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Ngram/">Ngram</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/OaipmhHarvester/">OAI-PMH Harvester</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/OaiPmhRepository/">OAI-PMH Repository</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Omeka_API_Import/">Omeka API Import</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/PBCore/">PBCore</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/PdfText/">PDF Text</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Plugin_Shortcodes/">Plugin Shortcodes</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Posters/">Posters</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/RecordRelations/">Record Relations</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/RedactElements/">Redact Elements</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Reports/">Reports</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Scripto/">Scripto</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/SearchByMetadata/">Search by Metadata</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/ShortcodeCarousel/">Shortcode Carousel</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/SimpleContactForm/">Simple Contact Form</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/SimplePages/">Simple Pages</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/SimpleVocab/">Simple Vocab</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/SocialBookmarking/">Social Bookmarking</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/TextAnalysis/">Text Analysis</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/TextAnnotation/">Text Annotation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/UserProfiles/">User Profiles</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/VRACore/">VRA Core</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/ZoomIt/">ZoomIt</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/ZoteroImport/">Zotero Import</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Troubleshooting</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../Troubleshooting_Omeka/">Troubleshooting</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Retreiving Error Messages</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#display-error-messages">Display Error Messages</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#omeka-20-and-newer">Omeka 2.0 and newer</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#omeka-15-and-older">Omeka 1.5 and older</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#activate-error-logging">Activate Error Logging</a>
+    </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Report-a-bug/">Report a Bug</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Technical</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/Adding_LightBox_to_Omeka/">Adding Lightbox to Omeka</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/Backing_up_an_Omeka_Database/">Backing up an Omeka Classic Database</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/Configuring_File_Storage/">Configuring File Storage</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/ConfiguringThumbnailCreation/">Configuring Thumbnail Creation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/Contribute_Code_to_Omeka/">Contribute Code to Omeka</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/DatabaseConfigurationFile/">Database Configuration File</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/Legacy_documentation/">Legacy Documentation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/Moving_to_Another_Server/">Moving to Another Server</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/Output_Formats/">Output Formats</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/Setting_PHP_Path/">Setting the PHP Path</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/Translate_Omeka/">Translate Omeka</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/Using_Omeka_with_Other_Tools_and_Platforms/">Using Omeka with Other Tools and Platforms</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Omeka Classic User Manual</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Troubleshooting &raquo;</li>
+        
+      
+    
+    <li>Retreiving Error Messages</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/omeka/classic-enduser/edit/master/docs/Troubleshooting/Retrieving_Error_Messages.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="retreiving-error-messages">Retreiving Error Messages<a class="headerlink" href="#retreiving-error-messages" title="Permanent link"></a></h1>
+<p>If Omeka Classic doesn't seem to be behaving correctly, for whatever reason, there are steps you can take to get more descriptive error messages. These are turned off by default, but can be used during the production of an Omeka site for troubleshooting.</p>
+<h2 id="display-error-messages">Display Error Messages<a class="headerlink" href="#display-error-messages" title="Permanent link"></a></h2>
+<p>You can change some configuration settings in Omeka to display error messages directly on the screen.</p>
+<p>After enabling error messages, return to the page in Omeka that is causing the error. Do your best to repeat whatever originally caused the error, then send us the error message that is displayed on your screen. Be sure to disable these settings again once the problem is resolved.</p>
+<p>The error display settings are different between Omeka 2.0 and older versions of Omeka:</p>
+<h3 id="omeka-20-and-newer">Omeka 2.0 and newer<a class="headerlink" href="#omeka-20-and-newer" title="Permanent link"></a></h3>
+<p>To turn on robust error messages, take the following steps:</p>
+<ol>
+<li>Go into the files for your Omeka installation on your server. You might do this using a FileManager from your hosting service, or SSH. </li>
+<li>Open the <code>.htaccess</code> file in the root directory of your Omeka installation. The root is the main directory, where you'll also find the <code>plugins</code> and <code>themes</code> folders.<ul>
+<li>You might need to turn on "see hidden files" in order to see the <code>.htaccess</code> file. If you're not sure how to do this, look in the directions for your file manager.</li>
+</ul>
+</li>
+<li>Find the following line, and uncomment it (that is, remove the <code>#</code> sign):  <code>#SetEnv APPLICATION_ENV development</code>. When you are done, it should read <code>SetEnv APPLICATION_ENV development</code>. <ul>
+<li>You might need to download the file in order to edit it. Be sure to upload the edited version and replace the older version.</li>
+</ul>
+</li>
+</ol>
+<p>If you're trying to debug a 404 ("Not Found") or 403 ("Forbidden") error, open <code>application/config/config.ini</code>, and change the value of <code>debug.exceptions</code> to <code>true</code>.</p>
+<h3 id="omeka-15-and-older">Omeka 1.5 and older<a class="headerlink" href="#omeka-15-and-older" title="Permanent link"></a></h3>
+<ol>
+<li>Open the .htaccess file in the root of your Omeka installation, and change the value of <code>php_value display_errors</code> to <code>1</code>.</li>
+<li>Open 'application/config/config.ini', and change the value of <code>debug.exceptions</code>  to <code>true</code>.</li>
+</ol>
+<h2 id="activate-error-logging">Activate Error Logging<a class="headerlink" href="#activate-error-logging" title="Permanent link"></a></h2>
+<p>If you'd prefer to not have your error messages publicly displayed on your site, you can instead activate error logging. Activating error logging will log any errors encountered by Omeka to a file in <code>application/log</code> directory of Omeka. You can then post to the forum or email directly to us.</p>
+<ol>
+<li>Change permissions on your installation so that the following file is writable by your server: <code>application/logs/errors.log</code></li>
+<li>Edit your <code>application/config/config.ini</code> file and change the value of <code>log.errors</code> to <code>true</code>.</li>
+<li>Do your best to repeat whatever originally caused the error, then send us the relevant contents of the <code>errors.log</code> file.</li>
+</ol>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Report-a-bug/" class="btn btn-neutral float-right" title="Report a Bug">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../Troubleshooting_Omeka/" class="btn btn-neutral" title="Troubleshooting"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  <p><a rel="license" href="http://creativecommons.org/licenses/by-nc/2.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/2.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/2.0/">Creative Commons Attribution-NonCommercial 2.0 Generic License</a>.</p>
+  <p>Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.</p>
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/omeka/classic-enduser/" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../Troubleshooting_Omeka/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../Report-a-bug/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Dropbox - Omeka Classic User Manual</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  <link href="../../css/extra.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Dropbox";
+    var mkdocs_page_input_path = "Plugins/Dropbox.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Omeka Classic User Manual</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <p class="caption"><span class="caption-text">Getting Started</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../GettingStarted/Site_Planning_Tips/">Site Planning Tips</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../GettingStarted/UsingOmeka/">Examples and Case Studies</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../GettingStarted/Hosting_Suggestions/">Hosting Suggestions</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../GettingStarted/Feature_List/">Feature List</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../GettingStarted/Accessibility_Statement/">Accessibility Statement</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../GettingStarted/Screencasts/">Screencasts</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../GettingStarted/Searching/">Searching</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Installing</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Installation/System_Requirements/">System Requirements</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Installation/Installation/">Installation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Installation/Upgrading/">Upgrading</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Installation/Configuring_Language/">Configuring Language</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Installation/Setting_Directory_Permissions/">Setting Directory Permissions</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Content</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Content/Items/">Items</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Content/Files/">Files</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Content/Working_with_Dublin_Core/">Working with Dublin Core</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Content/Using_HTML_Editor-TinyMCE/">Using the HTML Editor</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Content/Item_Types/">Item Types</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Content/Collections/">Collections</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Content/Tags/">Tags</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Content/Shortcodes/">Shortcodes</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Administration</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Adding_and_Managing_Plugins/">Working with Plugins</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Appearance/Themes/">Themes</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Appearance/Navigation/">Navigation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Appearance/Appearance_Settings/">Appearance Settings</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Users/">Users</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Settings/General_Settings/">General Settings</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Settings/Security_Settings/">Security Settings</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Settings/Search_Settings/">Search Settings</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Settings/Element_Sets/">Element Sets</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Settings/Item_Type_Elements/">Item Type Elements</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Settings/API_Settings/">API Settings</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Settings/ReCaptcha/">ReCaptcha</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Plugins</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../Coins/">Coins</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../CollectionTree/">Collection Tree</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Commenting/">Commenting</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Contribution/">Contribution</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../CSS_Editor/">CSS Editor</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../CSV_Import/">CSV Import</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../DerivativeImages/">Derivative Images</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../DocsViewer/">Docs Viewer</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Dropbox</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#using-the-dropbox-plugin">Using the Dropbox plugin</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#batch-adding-files-as-items">Batch Adding Files As Items</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#adding-files-to-items">Adding Files to Items</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#security-settings">Security Settings</a>
+    </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../DublinCoreExtended/">Dublin Core Extended</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Editorial/">Editorial</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../EmbedCodes/">Embed Codes</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../ExhibitBuilder/">Exhibit Builder</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../ExhibitImageAnnotation/">Exhibit Image Annotation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Geolocation/">Geolocation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../GuestUser/">Guest User</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Heist/">Heist</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../ItemOrder/">Item Order</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../ItemRelations/">Item Relations</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Library_of_Congress_Suggest/">Library of Congress Suggest</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Ngram/">Ngram</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../OaipmhHarvester/">OAI-PMH Harvester</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../OaiPmhRepository/">OAI-PMH Repository</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Omeka_API_Import/">Omeka API Import</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../PBCore/">PBCore</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../PdfText/">PDF Text</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Plugin_Shortcodes/">Plugin Shortcodes</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Posters/">Posters</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../RecordRelations/">Record Relations</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../RedactElements/">Redact Elements</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Reports/">Reports</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Scripto/">Scripto</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../SearchByMetadata/">Search by Metadata</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../ShortcodeCarousel/">Shortcode Carousel</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../SimpleContactForm/">Simple Contact Form</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../SimplePages/">Simple Pages</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../SimpleVocab/">Simple Vocab</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../SocialBookmarking/">Social Bookmarking</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../TextAnalysis/">Text Analysis</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../TextAnnotation/">Text Annotation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../UserProfiles/">User Profiles</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../VRACore/">VRA Core</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../ZoomIt/">ZoomIt</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../ZoteroImport/">Zotero Import</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Troubleshooting</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Troubleshooting/Troubleshooting_Omeka/">Troubleshooting</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Troubleshooting/Retrieving_Error_Messages/">Retreiving Error Messages</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Troubleshooting/Report-a-bug/">Report a Bug</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Technical</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/Adding_LightBox_to_Omeka/">Adding Lightbox to Omeka</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/Backing_up_an_Omeka_Database/">Backing up an Omeka Classic Database</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/Configuring_File_Storage/">Configuring File Storage</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/ConfiguringThumbnailCreation/">Configuring Thumbnail Creation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/Contribute_Code_to_Omeka/">Contribute Code to Omeka</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/DatabaseConfigurationFile/">Database Configuration File</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/Legacy_documentation/">Legacy Documentation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/Moving_to_Another_Server/">Moving to Another Server</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/Output_Formats/">Output Formats</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/Setting_PHP_Path/">Setting the PHP Path</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/Translate_Omeka/">Translate Omeka</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/Using_Omeka_with_Other_Tools_and_Platforms/">Using Omeka with Other Tools and Platforms</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Omeka Classic User Manual</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Plugins &raquo;</li>
+        
+      
+    
+    <li>Dropbox</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/omeka/classic-enduser/edit/master/docs/Plugins/Dropbox.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="dropbox">Dropbox<a class="headerlink" href="#dropbox" title="Permanent link"></a></h1>
+<p><strong>Please note that this plugin is not affiliated with the Dropbox service.</strong></p>
+<p>The Dropbox allows Omeka Classic users to batch upload a large quantity of files at one time, and may allow you to circumvent file size restrictions imposed by your server administrator. Once installed, you may create unique items from each file, and you may associate numerous files with pre-existing items.</p>
+<h2 id="using-the-dropbox-plugin">Using the Dropbox plugin<a class="headerlink" href="#using-the-dropbox-plugin" title="Permanent link"></a></h2>
+<ol>
+<li><a href="../../Admin/Adding_and_Managing_Plugins/">Install</a> the Dropbox plugin</li>
+<li>Make 'files' folder located in the /Dropbox plugin directory writable to the Apache server. For most servers, you can use the follow command to make the file writable: <code>chmod -r 775 files</code>.</li>
+<li>Once activated, the Dropbox plugin creates a tab found on the left side menu under Dashboard in admin.</li>
+<li>FTP files you wish to upload to the /files folder located on the server (/plugins/Dropbox/files/). The list of files will appear in files tab when adding or editing items,and under the Dropbox tab available from the /admin screen (.../admin/dropbox).</li>
+</ol>
+<p><img alt="Files available via the dropbox plugin " src="../../doc_files/plugin_images/Dropbox.jpg" /></p>
+<h2 id="batch-adding-files-as-items">Batch Adding Files As Items<a class="headerlink" href="#batch-adding-files-as-items" title="Permanent link"></a></h2>
+<p>From the Dropbox box tab (.../admin/dropbox) you may select files to batch add as individual items - note that one file creates one item). When selecting files, you may also add them to a collection and associate the same set of tags, make the items public or feature them.</p>
+<p>Click "Upload Files as Items." Items are created from each file and titled with the file name. This can modified later if you wish to edit the item's title.</p>
+<ul>
+<li>Are your jobs starting and not completing? You might need to <a href="../../Technical/Setting_PHP_Path/">set the path for PHP</a> so that your system can perform the background process to make the items.</li>
+</ul>
+<h2 id="adding-files-to-items">Adding Files to Items<a class="headerlink" href="#adding-files-to-items" title="Permanent link"></a></h2>
+<p>To add dropbox files to items, add or edit an item(.../items/add or .../items/edit) and click on the Files tab.</p>
+<p>Check the box, or boxes, of the file(s) you wish to associate with that particular item. You may associate multiple files with that item. Click Add Item or Save Changes button to complete the file adding process.</p>
+<p><img alt="Adding an item via the Files tab in item/edit" src="../../doc_files/plugin_images/Dropboxitem.png" /></p>
+<p>You may add files from the dropbox at any point during the adding or editing process.</p>
+<h2 id="security-settings">Security Settings<a class="headerlink" href="#security-settings" title="Permanent link"></a></h2>
+<p>It may be necessary to add specific mimetypes to the Allowed File Types in the admin section. See <a href="../../Admin/Settings/Security_Settings/">Security Settings</a> for more information.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../DublinCoreExtended/" class="btn btn-neutral float-right" title="Dublin Core Extended">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../DocsViewer/" class="btn btn-neutral" title="Docs Viewer"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  <p><a rel="license" href="http://creativecommons.org/licenses/by-nc/2.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/2.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/2.0/">Creative Commons Attribution-NonCommercial 2.0 Generic License</a>.</p>
+  <p>Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.</p>
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/omeka/classic-enduser/" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../DocsViewer/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../DublinCoreExtended/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

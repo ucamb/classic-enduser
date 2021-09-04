@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Examples and Case Studies - Omeka Classic User Manual</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  <link href="../../css/extra.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Examples and Case Studies";
+    var mkdocs_page_input_path = "GettingStarted/UsingOmeka.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Omeka Classic User Manual</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <p class="caption"><span class="caption-text">Getting Started</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../Site_Planning_Tips/">Site Planning Tips</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Examples and Case Studies</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#case-study">Case Study</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#how-to-read-an-omeka-site">How to read an Omeka site</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#how-are-others-using-omeka-classic">How are others using Omeka Classic?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#teaching-with-omeka-classic">Teaching with Omeka Classic</a>
+    </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Hosting_Suggestions/">Hosting Suggestions</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Feature_List/">Feature List</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Accessibility_Statement/">Accessibility Statement</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Screencasts/">Screencasts</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Searching/">Searching</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Installing</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Installation/System_Requirements/">System Requirements</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Installation/Installation/">Installation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Installation/Upgrading/">Upgrading</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Installation/Configuring_Language/">Configuring Language</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Installation/Setting_Directory_Permissions/">Setting Directory Permissions</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Content</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Content/Items/">Items</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Content/Files/">Files</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Content/Working_with_Dublin_Core/">Working with Dublin Core</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Content/Using_HTML_Editor-TinyMCE/">Using the HTML Editor</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Content/Item_Types/">Item Types</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Content/Collections/">Collections</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Content/Tags/">Tags</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Content/Shortcodes/">Shortcodes</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Administration</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Adding_and_Managing_Plugins/">Working with Plugins</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Appearance/Themes/">Themes</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Appearance/Navigation/">Navigation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Appearance/Appearance_Settings/">Appearance Settings</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Users/">Users</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Settings/General_Settings/">General Settings</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Settings/Security_Settings/">Security Settings</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Settings/Search_Settings/">Search Settings</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Settings/Element_Sets/">Element Sets</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Settings/Item_Type_Elements/">Item Type Elements</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Settings/API_Settings/">API Settings</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Settings/ReCaptcha/">ReCaptcha</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Plugins</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Coins/">Coins</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/CollectionTree/">Collection Tree</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Commenting/">Commenting</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Contribution/">Contribution</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/CSS_Editor/">CSS Editor</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/CSV_Import/">CSV Import</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/DerivativeImages/">Derivative Images</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/DocsViewer/">Docs Viewer</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Dropbox/">Dropbox</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/DublinCoreExtended/">Dublin Core Extended</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Editorial/">Editorial</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/EmbedCodes/">Embed Codes</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/ExhibitBuilder/">Exhibit Builder</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/ExhibitImageAnnotation/">Exhibit Image Annotation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Geolocation/">Geolocation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/GuestUser/">Guest User</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Heist/">Heist</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/ItemOrder/">Item Order</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/ItemRelations/">Item Relations</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Library_of_Congress_Suggest/">Library of Congress Suggest</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Ngram/">Ngram</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/OaipmhHarvester/">OAI-PMH Harvester</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/OaiPmhRepository/">OAI-PMH Repository</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Omeka_API_Import/">Omeka API Import</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/PBCore/">PBCore</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/PdfText/">PDF Text</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Plugin_Shortcodes/">Plugin Shortcodes</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Posters/">Posters</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/RecordRelations/">Record Relations</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/RedactElements/">Redact Elements</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Reports/">Reports</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Scripto/">Scripto</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/SearchByMetadata/">Search by Metadata</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/ShortcodeCarousel/">Shortcode Carousel</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/SimpleContactForm/">Simple Contact Form</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/SimplePages/">Simple Pages</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/SimpleVocab/">Simple Vocab</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/SocialBookmarking/">Social Bookmarking</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/TextAnalysis/">Text Analysis</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/TextAnnotation/">Text Annotation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/UserProfiles/">User Profiles</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/VRACore/">VRA Core</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/ZoomIt/">ZoomIt</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/ZoteroImport/">Zotero Import</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Troubleshooting</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Troubleshooting/Troubleshooting_Omeka/">Troubleshooting</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Troubleshooting/Retrieving_Error_Messages/">Retreiving Error Messages</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Troubleshooting/Report-a-bug/">Report a Bug</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Technical</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/Adding_LightBox_to_Omeka/">Adding Lightbox to Omeka</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/Backing_up_an_Omeka_Database/">Backing up an Omeka Classic Database</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/Configuring_File_Storage/">Configuring File Storage</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/ConfiguringThumbnailCreation/">Configuring Thumbnail Creation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/Contribute_Code_to_Omeka/">Contribute Code to Omeka</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/DatabaseConfigurationFile/">Database Configuration File</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/Legacy_documentation/">Legacy Documentation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/Moving_to_Another_Server/">Moving to Another Server</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/Output_Formats/">Output Formats</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/Setting_PHP_Path/">Setting the PHP Path</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/Translate_Omeka/">Translate Omeka</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/Using_Omeka_with_Other_Tools_and_Platforms/">Using Omeka with Other Tools and Platforms</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Omeka Classic User Manual</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Getting Started &raquo;</li>
+        
+      
+    
+    <li>Examples and Case Studies</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/omeka/classic-enduser/edit/master/docs/GettingStarted/UsingOmeka.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="examples-and-case-studies">Examples and Case Studies<a class="headerlink" href="#examples-and-case-studies" title="Permanent link"></a></h1>
+<p>The following page is meant to help people new to Omeka get a sense of how others have used Omeka Classic for projects, and inform you how to read a site using Omeka Classic to understand what choices the site builders made.</p>
+<h2 id="case-study">Case Study<a class="headerlink" href="#case-study" title="Permanent link"></a></h2>
+<p><a href="http://mallhistory.org">Histories of the National Mall</a> interprets the National Mall's rich past by offering historical maps, a chronology of past events, short bios of significant individuals, and episodes in the Mall's history. The site is built on Omeka, designed and written for optimal reading on a smartphone or tablet. </p>
+<p>The team behind <em>Histories of the National Mall</em> wrote a comprehensive explanation of the process behind the project, from planning to building to outreach, and everything in between. <a href="http://mallhistory.org/Guide/">"Building <em>Histories of the National Mall</em>:  A Guide to Creating a Digital Public History Project"</a> serves as an extended case study in building an Omeka project.</p>
+<h2 id="how-to-read-an-omeka-site">How to read an Omeka site<a class="headerlink" href="#how-to-read-an-omeka-site" title="Permanent link"></a></h2>
+<p>While not every Omeka Classic site makes use of every feature, there are common threads that make it possible to recognize an Omeka site in the wild. </p>
+<p>The easiest of these is the message "Proudly Powered by Omeka" in the footer, which is there by default but may be removed in custom themes. Even if that message is missing, there are clues that a site is built in Omeka Classic which can help you understand the choices the site creators made as the built the site. </p>
+<p><strong>Look at the address bar</strong> Omeka sites will almost always have the same slug for certain pages:</p>
+<ul>
+<li>browse items is siteurl/items; </li>
+<li>browse collections is siteurl/collections;</li>
+<li>exhibits are siteurl/exhibits. </li>
+</ul>
+<p>Even if the site creators have changed the label for these pages in their navigation menu, the urls will generally be the same. Checking the address bar to see what function (item, collection, exhibit, etc) the site is using will help you get a sense of how the creators have structured the site.</p>
+<p><strong>Know your themes</strong> </p>
+<p>Familiarize yourself with the standard <a href="http://omeka.org/classic/themes/">themes</a> for Omeka Classic - where the menu is located, how the pages are laid out, and other visual markers of the theme. You will be able to identify frequently-used themes even when colors are changed.</p>
+<p><strong>Skim the navigation</strong></p>
+<ul>
+<li>pay attention to urls (exhibit, collection, item, item type, tag)</li>
+<li>identify plugins by menu navigation label</li>
+</ul>
+<h2 id="how-are-others-using-omeka-classic">How are others using Omeka Classic?<a class="headerlink" href="#how-are-others-using-omeka-classic" title="Permanent link"></a></h2>
+<p><strong>Scholars:</strong></p>
+<ul>
+<li>Use Omeka Classic to share primary source collections, publish a series of essays, and collaborate with others in the creation of digital scholarship.</li>
+<li>Features and plugins you might like: design themes, exhibit builder, tagging, DocsViewer, Geolocation, Image Annotation, Text Analysis.</li>
+<li>Examples: <a href="http://omeka.uws.edu.au/farmstofreeways/">From Farms to Freeways: Women's Memories of Western Sydney</a>; <a href="https://newroots.lib.unc.edu/">New Roots: Voices from Carolina del Norte</a>; <a href="http://intemperance.org/">Intemperance Archive</a>. </li>
+</ul>
+<p><strong>Museum Professionals:</strong></p>
+<ul>
+<li>Use Omeka Classic to share collections and build online exhibits to accompany or enhance physical exhibits.</li>
+<li>Features and plugins you might like: Dublin Core metadata standards, W3C and 508 compliant, design themes; Exhibit Builder, Posters, Contribution, Reports, Social Bookmarking, CSV Import, OAI-PMH Repository, and Omeka API Import.</li>
+<li>Examples: <a href="http://omeka.tplcs.ca/virtual-exhibits/exhibits/show/audubon">John J. Audubon's Birds of America</a>; <a href="http://omeka.svsu.edu/">Marshall M. Fredericks Sculpture Museum</a>.</li>
+</ul>
+<p><strong>Librarians:</strong></p>
+<ul>
+<li>Use Omeka Classic as the publishing tool to complement your online catalog or launch a digital exhibit.</li>
+<li>Features and plugins you might like: Dublin Core metadata standards, W3C and 508 compliant, extensible and customizable item fields, Posters, Library of Congress Suggest, CSV Import, OAI-PMH Repository, and Omeka API Import.</li>
+<li>Examples: <a href="http://diyhistory.lib.uiowa.edu/">DIY History</a>; <a href="https://digitalsc.lib.vt.edu/">Virginia Tech Special Collections Online</a>; <a href="http://www.americanantiquarian.org/thomasballads/">Isaiah Thomas Broadside Ballads</a>. </li>
+</ul>
+<p><strong>Archivists:</strong></p>
+<ul>
+<li>Use Omeka Classic to share your collections, display documents and oral histories, or create digital archives with user-generated content.</li>
+<li>Features and plugins you might like: Dublin Core metadata standards, W3C and 508 compliant, Exhibit Builder, extensible and customizable item fields, Dublin Core Extended, Docs Viewer plugin, tagging, CSV Import, OAI-PMH Repository, and Omeka API Import.</li>
+<li>Examples: <a href="https://www.floridamemory.com/">Florida Memory</a>; <a href="http://www.arquivosaoroque.com.br/acervo/">Digital History Archive of São Roque</a> (in Portugese); <a href="http://digitalarchives.sjc.edu/">Saint John's College Digital Archives</a>. </li>
+</ul>
+<p><strong>Educators:</strong></p>
+<ul>
+<li>Use Omeka Classic to create lesson plans with accompanying primary sources, have students engage in the practices of public history and archival science, or serve as an alternative to written essay assignments. </li>
+<li>Features you might like: different user roles, ability to annotate  Exhibit Builder, Editorial, Image Annotation, Text Annotation, Simple Vocab.</li>
+<li>Examples: <a href="http://www.quattrocentoitalia.artinterp.org/omeka/">Fifteenth-Century Italian Art</a>; <a href="https://goinnorth.org/">Goin' North</a>; <a href="http://floodexplorer.org/">Ice Age Flood Explorer</a>. </li>
+</ul>
+<p><strong>Enthusiasts:</strong></p>
+<ul>
+<li>Use Omeka Classic to share you personal research or collections with the world, build exhibits and write essays that showcase your expertise.</li>
+<li>Features you might like: design themes, Exhibit Builder plugin, Contribution plugin, tagging, social bookmarking plugin.</li>
+<li>Examples: <a href="http://huginn.net/shoebox/letters/">A Shoebox of Norwegian Letters</a>; <a href="https://squaredancehistory.org/">Square Dance History Project</a>. </li>
+</ul>
+<h2 id="teaching-with-omeka-classic">Teaching with Omeka Classic<a class="headerlink" href="#teaching-with-omeka-classic" title="Permanent link"></a></h2>
+<p>Omeka Classic has been used in classes at the undergraduate and graduate level, as well as by high school students. In addition to the information in the Educator use case (above), the following resources may prove helpful for those wanting to use Omeka in their classroom:</p>
+<p><strong>Blog posts and articles:</strong></p>
+<ul>
+<li>Amanda Visconti, <a href="http://literaturegeek.com/2016/08/19/DH-consultation-notes-teaching-omeka">Teaching with Omeka DH Consultation Notes</a>, <em>Literature Geek</em>, August 19, 2016.</li>
+<li>Alston Cobourn, <a href="http://jitp.commons.gc.cuny.edu/spreading-awareness-of-digital-preservation-and-copyright-via-omeka-based-projects/">Spreading Awareness of Digital Preservation and Copyright via Omeka-based Projects</a>, <em>The Journal of Interactive Technology and Pedagogy</em>, March 28, 2016.</li>
+<li>Jeffrey McClurken (Associate Professor and Chair of History and American Studies at the University of Mary Washington), “Teaching and Learning with Omeka: Discomfort, Play, and Creating Public, Online, Digital Collections," <em>Learning Through Digital Media Experiments in Technology and Pedagogy</em>, 2011.</li>
+<li>Jeffrey McClurken (Associate Professor and Chair of History and American Studies at the University of Mary Washington). <a href="http://chronicle.com/blogs/profhacker/teaching-with-omeka/26078">“Teaching with Omeka"</a>. ProfHacker blog, <em>Chronicle of Higher Education</em>, August 9, 2010.</li>
+</ul>
+<p><strong>Additional Resources</strong></p>
+<p><a href="https://omekagym.omeka.net/about">Omeka Gym</a>: a collection of resources for teaching with Omeka, including tutorials, exercises, assignments, and examples. Created by <a href="https://alexandrabolintineanu.wordpress.com/">Alexandra Bolintineanu</a>.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Hosting_Suggestions/" class="btn btn-neutral float-right" title="Hosting Suggestions">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../Site_Planning_Tips/" class="btn btn-neutral" title="Site Planning Tips"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  <p><a rel="license" href="http://creativecommons.org/licenses/by-nc/2.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/2.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/2.0/">Creative Commons Attribution-NonCommercial 2.0 Generic License</a>.</p>
+  <p>Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.</p>
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/omeka/classic-enduser/" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../Site_Planning_Tips/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../Hosting_Suggestions/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

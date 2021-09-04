@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Installation - Omeka Classic User Manual</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  <link href="../../css/extra.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Installation";
+    var mkdocs_page_input_path = "Installation/Installation.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Omeka Classic User Manual</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <p class="caption"><span class="caption-text">Getting Started</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../GettingStarted/Site_Planning_Tips/">Site Planning Tips</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../GettingStarted/UsingOmeka/">Examples and Case Studies</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../GettingStarted/Hosting_Suggestions/">Hosting Suggestions</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../GettingStarted/Feature_List/">Feature List</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../GettingStarted/Accessibility_Statement/">Accessibility Statement</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../GettingStarted/Screencasts/">Screencasts</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../GettingStarted/Searching/">Searching</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Installing</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../System_Requirements/">System Requirements</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Installation</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#preparing-to-install">Preparing to Install</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#upgrading-your-system">Upgrading Your System</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#7-easy-steps-for-installing-with-lamp-server-setup">7 Easy Steps for Installing with LAMP server setup</a>
+    </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Upgrading/">Upgrading</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Configuring_Language/">Configuring Language</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Setting_Directory_Permissions/">Setting Directory Permissions</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Content</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Content/Items/">Items</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Content/Files/">Files</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Content/Working_with_Dublin_Core/">Working with Dublin Core</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Content/Using_HTML_Editor-TinyMCE/">Using the HTML Editor</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Content/Item_Types/">Item Types</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Content/Collections/">Collections</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Content/Tags/">Tags</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Content/Shortcodes/">Shortcodes</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Administration</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Adding_and_Managing_Plugins/">Working with Plugins</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Appearance/Themes/">Themes</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Appearance/Navigation/">Navigation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Appearance/Appearance_Settings/">Appearance Settings</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Users/">Users</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Settings/General_Settings/">General Settings</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Settings/Security_Settings/">Security Settings</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Settings/Search_Settings/">Search Settings</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Settings/Element_Sets/">Element Sets</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Settings/Item_Type_Elements/">Item Type Elements</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Settings/API_Settings/">API Settings</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Settings/ReCaptcha/">ReCaptcha</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Plugins</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Coins/">Coins</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/CollectionTree/">Collection Tree</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Commenting/">Commenting</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Contribution/">Contribution</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/CSS_Editor/">CSS Editor</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/CSV_Import/">CSV Import</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/DerivativeImages/">Derivative Images</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/DocsViewer/">Docs Viewer</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Dropbox/">Dropbox</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/DublinCoreExtended/">Dublin Core Extended</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Editorial/">Editorial</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/EmbedCodes/">Embed Codes</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/ExhibitBuilder/">Exhibit Builder</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/ExhibitImageAnnotation/">Exhibit Image Annotation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Geolocation/">Geolocation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/GuestUser/">Guest User</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Heist/">Heist</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/ItemOrder/">Item Order</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/ItemRelations/">Item Relations</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Library_of_Congress_Suggest/">Library of Congress Suggest</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Ngram/">Ngram</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/OaipmhHarvester/">OAI-PMH Harvester</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/OaiPmhRepository/">OAI-PMH Repository</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Omeka_API_Import/">Omeka API Import</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/PBCore/">PBCore</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/PdfText/">PDF Text</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Plugin_Shortcodes/">Plugin Shortcodes</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Posters/">Posters</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/RecordRelations/">Record Relations</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/RedactElements/">Redact Elements</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Reports/">Reports</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Scripto/">Scripto</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/SearchByMetadata/">Search by Metadata</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/ShortcodeCarousel/">Shortcode Carousel</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/SimpleContactForm/">Simple Contact Form</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/SimplePages/">Simple Pages</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/SimpleVocab/">Simple Vocab</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/SocialBookmarking/">Social Bookmarking</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/TextAnalysis/">Text Analysis</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/TextAnnotation/">Text Annotation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/UserProfiles/">User Profiles</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/VRACore/">VRA Core</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/ZoomIt/">ZoomIt</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/ZoteroImport/">Zotero Import</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Troubleshooting</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Troubleshooting/Troubleshooting_Omeka/">Troubleshooting</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Troubleshooting/Retrieving_Error_Messages/">Retreiving Error Messages</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Troubleshooting/Report-a-bug/">Report a Bug</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Technical</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/Adding_LightBox_to_Omeka/">Adding Lightbox to Omeka</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/Backing_up_an_Omeka_Database/">Backing up an Omeka Classic Database</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/Configuring_File_Storage/">Configuring File Storage</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/ConfiguringThumbnailCreation/">Configuring Thumbnail Creation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/Contribute_Code_to_Omeka/">Contribute Code to Omeka</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/DatabaseConfigurationFile/">Database Configuration File</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/Legacy_documentation/">Legacy Documentation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/Moving_to_Another_Server/">Moving to Another Server</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/Output_Formats/">Output Formats</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/Setting_PHP_Path/">Setting the PHP Path</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/Translate_Omeka/">Translate Omeka</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/Using_Omeka_with_Other_Tools_and_Platforms/">Using Omeka with Other Tools and Platforms</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Omeka Classic User Manual</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Installing &raquo;</li>
+        
+      
+    
+    <li>Installation</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/omeka/classic-enduser/edit/master/docs/Installation/Installation.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link"></a></h1>
+<h2 id="preparing-to-install">Preparing to Install<a class="headerlink" href="#preparing-to-install" title="Permanent link"></a></h2>
+<p>Before installing Omeka Classic, make sure your web server meets our basic <a href="../System_Requirements/">system requirements</a>. These are standard requirements that are available by most web hosting services. Once these system requirements are met, all you need to do is install the Omeka software:</p>
+<h3 id="upgrading-your-system">Upgrading Your System<a class="headerlink" href="#upgrading-your-system" title="Permanent link"></a></h3>
+<p>If you need to upgrade your server to meet any of the Omeka system requirements, consult these resources:</p>
+<ul>
+<li><a href="http://httpd.apache.org/docs/2.0/upgrading.html">Upgrading Apache</a></li>
+<li><a href="http://www.php.net/manual/en/migration5.php">Upgrading PHP</a></li>
+<li><a href="http://www.mysql.org/doc/refman/5.1/en/upgrade.html">Upgrading MySQL</a></li>
+<li><a href="http://www.imagemagick.org/script/install-source.php">Installing ImageMagick</a></li>
+</ul>
+<h2 id="7-easy-steps-for-installing-with-lamp-server-setup">7 Easy Steps for Installing with LAMP server setup<a class="headerlink" href="#7-easy-steps-for-installing-with-lamp-server-setup" title="Permanent link"></a></h2>
+<p>Note: If you are doing a One-Click install from Dreamhost, you must edit the <code>db.ini</code> file in the Omeka directory (see 3 below).</p>
+<p>If you want to use Omeka Classic in a language other than English, you will need to configure it in the <code>/application/config/config.ini</code> file. See <a href="../Configuring_Language/">Configuring Language</a> for details. The installation steps are localized, so you might want to do this before the rest of the installation steps below. It is fine to change this after your site is successfully installed.</p>
+<ol>
+<li>
+<p><strong>Create a MySQL database</strong> on your web host, as well as a user with permissions to modify the database.</p>
+<ul>
+<li>Make sure to take note of the database hostname, the database name, the database user's username, and the database user's password.</li>
+<li>Make sure the collation of your database is set to 'utf8_unicode_ci' and that the charset is 'utf8'.</li>
+</ul>
+</li>
+<li>
+<p><strong><a href="https://omeka.org/classic/download/">Download the latest version of Omeka</a></strong> and uncompress the .zip file.</p>
+<ul>
+<li>The .zip file will have a name similar to 'omeka.zip' that includes the version number.</li>
+<li>Save the .zip file somewhere you can find it again, such as your Download folder. Double-click the .zip file to extract the files in the .zip archive, and make sure to note where the files are extracted.</li>
+<li>If you are unable to extract the files, you might need to download an uncompression program such as WinZip or WinRAR (for Windows)or Stuffit Expander (for Mac).</li>
+<li>The extracted (uncompressed) directory will have a name similar to 'omeka' that includes the version number.</li>
+<li>Users familiar with git might want to clone the code from <a href="http://github.com/omeka/Omeka">our public GitHub repository</a>.</li>
+</ul>
+</li>
+<li>
+<p>In the resulting directory, find and open your database configuration file, which is named <code>db.ini</code>. <strong>Replace the 'XXXXX' values in the db.ini file</strong> with your database host, username, password, and database name.</p>
+<ul>
+<li>You can edit the <code>db.ini</code> file with a text editor such as Notepad for Windows or TextEdit for Mac. Be sure to save the file as plain text and keep the name <code>db.ini</code>.</li>
+<li>You do not need to change values for <code>prefix</code> and <code>port</code> in the db.ini file.</li>
+<li>See the page for the <a href="../Technical/DatabaseConfigurationFile">Database Configuration File</a> for an explanation of each element in the <code>db.ini</code> file.</li>
+</ul>
+</li>
+<li>
+<p><strong>Upload the directory</strong> and all of its contents, including the
+    updated <code>db.ini</code> file, to your server.</p>
+<ul>
+<li>If you have command-line access to your server, you can upload the Omeka .zip file and unzip it on the server.</li>
+<li>If you do not have command-line access to your server, you can use a file transfer program such as Filezilla or FireFTP to transfer the contents of the unzipped omeka directory to your server. This may take 20 minutes or more.</li>
+<li>Make sure to upload the <code>.htaccess</code> file that's in the top-level directory of the Omeka zip along with the rest of the files. This file is hidden by default in many file transfer programs; to see the <code>.htaccess</code> file, you may need to change the preferences in your file transfer program.</li>
+<li>You can rename the omeka directory either before or after you upload it to give it a URL that is relevant to your project.</li>
+</ul>
+</li>
+<li>
+<p><strong>Make Omeka's storage directory and its sub-directories writable by the web server.</strong> For Omeka 1.5.3, the directory is <code>archive</code>. For Omeka 2.0+, the directory is <code>files</code>. You can <a href="../Setting_Directory_Permissions/">change the permissions yourself</a> with an FTP or other file transfer program, or with shell commands over SSH. If you're not sure what to do, ask your host for advice, or to change the permissions for you.</p>
+</li>
+<li>
+<p>Open your web browser and <strong>visit the URL</strong> where you uploaded the omeka directory. Click "Install".</p>
+<ul>
+<li>If you renamed the omeka directory 'project' and put it in the top-most directory of your site, for instance, the URL to visit would be <code>http://mydomain.org/project</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Complete the installation form</strong> by filling out the required fields, including the name of your Omeka site, email address, and username/password of the super user (the super user account controls the entire website).</p>
+<ul>
+<li>You can change these settings in <a href="../../Admin/Settings/General_Settings/">General Settings</a> once the installation is complete.</li>
+<li>You can leave fields that are already filled in as they are; you do not need to change the values.</li>
+</ul>
+</li>
+</ol>
+<p>If the installation was <strong>successful,</strong> you'll see a screen with links to view the live site or to log in with the superuser's username and password to the administrative panel at <code>http://mydomain.org/admin</code>. Congratulations!</p>
+<p>If your installation was <strong>unsuccessful,</strong> try these steps:</p>
+<ul>
+<li>Make sure that both <code>.htaccess</code> files mentioned above (only the top-level one for Omeka 1.4 and higher) were successfully uploaded.</li>
+<li>If both <code>.htaccess</code> files were successfully uploaded but your installation is still unsuccessful, make sure that the information in the 'db.ini' file on the server is correct.</li>
+<li>If your installation is still unsuccessful, try deleting the entire omeka directory from your server and reuploading it. One or more files might have failed to upload.</li>
+<li>If the installation is apparently successful, but you are unable to upload items through the admin interface, make sure that you correctly followed the instructions in Step 4 above. Your web server <em>must</em> have write access to the 'archive' directory for you to upload files.</li>
+<li>If the installation is successful, but you are getting "File not found" errors when you navigate to addresses such as <code>http://mydomain.org/admin</code>, you probably have a conflict with another CMS such as WordPress on the same server. To fix this issue, you probably need to enable the "RewriteBase" line in your <code>.htaccess</code> file.</li>
+<li>If you still have issues, please consult the <a href="../../Troubleshooting/Troubleshooting_Omeka/">Troubleshooting Omeka</a> page or post your issue on the <a href="http://forum.omeka.org">forums</a>.</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Upgrading/" class="btn btn-neutral float-right" title="Upgrading">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../System_Requirements/" class="btn btn-neutral" title="System Requirements"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  <p><a rel="license" href="http://creativecommons.org/licenses/by-nc/2.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/2.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/2.0/">Creative Commons Attribution-NonCommercial 2.0 Generic License</a>.</p>
+  <p>Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.</p>
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/omeka/classic-enduser/" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../System_Requirements/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../Upgrading/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

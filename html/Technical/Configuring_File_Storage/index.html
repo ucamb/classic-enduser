@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Configuring File Storage - Omeka Classic User Manual</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  <link href="../../css/extra.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Configuring File Storage";
+    var mkdocs_page_input_path = "Technical/Configuring_File_Storage.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Omeka Classic User Manual</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <p class="caption"><span class="caption-text">Getting Started</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../GettingStarted/Site_Planning_Tips/">Site Planning Tips</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../GettingStarted/UsingOmeka/">Examples and Case Studies</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../GettingStarted/Hosting_Suggestions/">Hosting Suggestions</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../GettingStarted/Feature_List/">Feature List</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../GettingStarted/Accessibility_Statement/">Accessibility Statement</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../GettingStarted/Screencasts/">Screencasts</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../GettingStarted/Searching/">Searching</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Installing</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Installation/System_Requirements/">System Requirements</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Installation/Installation/">Installation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Installation/Upgrading/">Upgrading</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Installation/Configuring_Language/">Configuring Language</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Installation/Setting_Directory_Permissions/">Setting Directory Permissions</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Content</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Content/Items/">Items</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Content/Files/">Files</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Content/Working_with_Dublin_Core/">Working with Dublin Core</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Content/Using_HTML_Editor-TinyMCE/">Using the HTML Editor</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Content/Item_Types/">Item Types</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Content/Collections/">Collections</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Content/Tags/">Tags</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Content/Shortcodes/">Shortcodes</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Administration</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Adding_and_Managing_Plugins/">Working with Plugins</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Appearance/Themes/">Themes</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Appearance/Navigation/">Navigation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Appearance/Appearance_Settings/">Appearance Settings</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Users/">Users</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Settings/General_Settings/">General Settings</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Settings/Security_Settings/">Security Settings</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Settings/Search_Settings/">Search Settings</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Settings/Element_Sets/">Element Sets</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Settings/Item_Type_Elements/">Item Type Elements</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Settings/API_Settings/">API Settings</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Settings/ReCaptcha/">ReCaptcha</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Plugins</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Coins/">Coins</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/CollectionTree/">Collection Tree</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Commenting/">Commenting</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Contribution/">Contribution</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/CSS_Editor/">CSS Editor</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/CSV_Import/">CSV Import</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/DerivativeImages/">Derivative Images</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/DocsViewer/">Docs Viewer</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Dropbox/">Dropbox</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/DublinCoreExtended/">Dublin Core Extended</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Editorial/">Editorial</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/EmbedCodes/">Embed Codes</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/ExhibitBuilder/">Exhibit Builder</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/ExhibitImageAnnotation/">Exhibit Image Annotation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Geolocation/">Geolocation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/GuestUser/">Guest User</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Heist/">Heist</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/ItemOrder/">Item Order</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/ItemRelations/">Item Relations</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Library_of_Congress_Suggest/">Library of Congress Suggest</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Ngram/">Ngram</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/OaipmhHarvester/">OAI-PMH Harvester</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/OaiPmhRepository/">OAI-PMH Repository</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Omeka_API_Import/">Omeka API Import</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/PBCore/">PBCore</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/PdfText/">PDF Text</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Plugin_Shortcodes/">Plugin Shortcodes</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Posters/">Posters</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/RecordRelations/">Record Relations</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/RedactElements/">Redact Elements</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Reports/">Reports</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Scripto/">Scripto</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/SearchByMetadata/">Search by Metadata</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/ShortcodeCarousel/">Shortcode Carousel</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/SimpleContactForm/">Simple Contact Form</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/SimplePages/">Simple Pages</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/SimpleVocab/">Simple Vocab</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/SocialBookmarking/">Social Bookmarking</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/TextAnalysis/">Text Analysis</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/TextAnnotation/">Text Annotation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/UserProfiles/">User Profiles</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/VRACore/">VRA Core</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/ZoomIt/">ZoomIt</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/ZoteroImport/">Zotero Import</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Troubleshooting</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Troubleshooting/Troubleshooting_Omeka/">Troubleshooting</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Troubleshooting/Retrieving_Error_Messages/">Retreiving Error Messages</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Troubleshooting/Report-a-bug/">Report a Bug</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Technical</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../Adding_LightBox_to_Omeka/">Adding Lightbox to Omeka</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Backing_up_an_Omeka_Database/">Backing up an Omeka Classic Database</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Configuring File Storage</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#storage-adapters">Storage Adapters</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#adapter-options">Adapter Options</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#filesystem-adapter-options">Filesystem Adapter Options</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#localdir">localDir</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#webdir">webDir</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#zends3-adapter-options">ZendS3 Adapter Options</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#accesskeyid">accessKeyId</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#secretaccesskey">secretAccessKey</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#bucket">bucket</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#expiration">expiration</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#endpoint">endpoint</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#forcessl">forceSSL</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#setting-the-temporary-directory">Setting the Temporary Directory</a>
+    </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../ConfiguringThumbnailCreation/">Configuring Thumbnail Creation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Contribute_Code_to_Omeka/">Contribute Code to Omeka</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../DatabaseConfigurationFile/">Database Configuration File</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Legacy_documentation/">Legacy Documentation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Moving_to_Another_Server/">Moving to Another Server</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Output_Formats/">Output Formats</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Setting_PHP_Path/">Setting the PHP Path</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Translate_Omeka/">Translate Omeka</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Using_Omeka_with_Other_Tools_and_Platforms/">Using Omeka with Other Tools and Platforms</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Omeka Classic User Manual</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Technical &raquo;</li>
+        
+      
+    
+    <li>Configuring File Storage</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/omeka/classic-enduser/edit/master/docs/Technical/Configuring_File_Storage.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="configuring-file-storage">Configuring File Storage<a class="headerlink" href="#configuring-file-storage" title="Permanent link"></a></h1>
+<p>Omeka Classic allows administrators to configure how files are stored (both original files uploaded to Omeka Classic and the derivative images Omeka creates itself). For typical users, the default settings are sufficient: files are simply stored the <code>files</code> subdirectory of the Omeka installation and served from there by the web server, just like any other file in Omeka.</p>
+<p>However, if you want or need to store files in a different location, on a different drive, or even a different server or service, you'll need to do some configuration. The storage system is configured through the Omeka configuration file, <code>application/config/config.ini</code>.</p>
+<p>Note: storage changes in the configuration get applied immediately, and will affect all operations involving files. If you change storage methods or locations after already working on an Omeka installation for some time, you'll
+have to take care of moving or copying any pre-existing files to the new location yourself. If you're thinking about using non-standard storage settings, it's often easiest to make that decision up front, before you upload anything.</p>
+<h2 id="storage-adapters">Storage Adapters<a class="headerlink" href="#storage-adapters" title="Permanent link"></a></h2>
+<p>Omeka's storage system is based on "adapters." An adapter is simply a method for storing and accessing files, and Omeka ships with two adapters out of the box.</p>
+<p>The default adapter is the Filesystem adapter, and it just stores files on the local server. If you haven't explicitly chosen an adapter to use, you're using this one, and it's the right choice for most users, especially if you're not sure which you want to use.</p>
+<p>The second adapter included with Omeka is the ZendS3 adapter, which uses Zend Framework code for storing files on Amazon's S3 storage service. This is a more complex adapter, and it requires you to sign up for S3, but it can be the right choice if you have constrained local storage and a large set of files to deal with, or just want to store files remotely for whatever reason.</p>
+<p>You set the adapter with a line <code>storage.adapter</code> in the configuration file. This configuration option accepts the name of an adapter class. For the built-in adapters, the class name will start with <code>Omeka_Storage_Adapter</code>, so the Filesystem adapter would be <code>Omeka_Storage_Adapter_Filesystem</code>, and the
+ZendS3 adapter would be <code>Omeka_Storage_Adapter_ZendS3</code>. Plugins can add their own adapters too, and the plugin should document for you how it needs to be configured.</p>
+<p>Remember, if you don't explicitly choose an adapter (in other words, if you don't have a <code>storage.adapter</code> line in your configuration file) then Omeka will use the Filesystem adapter.</p>
+<h2 id="adapter-options">Adapter Options<a class="headerlink" href="#adapter-options" title="Permanent link"></a></h2>
+<p>Each adapter has some options that can be set to change its behavior. These
+options differ from adapter to adapter. Adapter options are set with
+<code>storage.adapterOptions.</code> lines in the configuration file (for example, to
+set the <code>localDir</code> option for the Filesystem adapter, you'd use a line like
+this (obviously with a real path instead):</p>
+<pre><code>storage.adapterOptions.localDir = &quot;/local/path/to/store/files&quot;
+</code></pre>
+<h3 id="filesystem-adapter-options">Filesystem Adapter Options<a class="headerlink" href="#filesystem-adapter-options" title="Permanent link"></a></h3>
+<h4 id="localdir"><code>localDir</code><a class="headerlink" href="#localdir" title="Permanent link"></a></h4>
+<p>The directory where files will be stored. If this is not set, the directory
+is set to the <code>files</code> subdirectory of the Omeka installation by default.
+Just like is true for <code>files</code> in a normal installation, whatever directory
+you choose here must be readable and writable by the local user Omeka
+executes as (often, this is the web server user).</p>
+<p>For visitors to be able to see the files, they'll need to be served by a
+web server. For the default location, this is taken care of automatically,
+as Omeka is already served by your web server along with the files in the
+Omeka directory (including the <code>files</code> subdirectory). When you change
+<code>localDir</code> to a custom setting, you almost always also need to set <code>webDir</code>
+(see the next heading).</p>
+<h4 id="webdir"><code>webDir</code><a class="headerlink" href="#webdir" title="Permanent link"></a></h4>
+<p>The URL path to the directory given in <code>localDir</code>. By default, this is the
+root URL for the Omeka installation plus <code>/files</code>, to go along with the
+default for <code>localDir</code>.</p>
+<p>Omeka doesn't do anything by itself to serve files, it just stores them
+in the specified directory and calculates the URL for them. A web server like
+Apache is required to actually serve the files to users, so you'll need to set
+up a server to serve the files from your <code>localDir</code>. If you choose a <code>localDir</code>
+that is within the "document root" of a web server you already have set up, you
+may be able to do this without any additional reconfiguration.</p>
+<p>This option needs to be an absolute URL, like <code>https://example.com/files</code> .
+Only the URL up to the directory needs to be provided; Omeka will handle the
+part of the URL for referring to a specific file and type of file (in other
+words, this option is the <em>prefix</em> for the file URLs).</p>
+<h3 id="zends3-adapter-options">ZendS3 Adapter Options<a class="headerlink" href="#zends3-adapter-options" title="Permanent link"></a></h3>
+<p>Unlike the Filesystem adapter, the ZendS3 adapter has several options that are
+mandatory and have no default. So, to use this adapter, you must also always
+set at least some settings.</p>
+<p>The ZendS3 adapter requires you to have an <a href="https://aws.amazon.com/s3/getting-started/">Amazon S3</a> bucket set up.</p>
+<h4 id="accesskeyid"><code>accessKeyId</code><a class="headerlink" href="#accesskeyid" title="Permanent link"></a></h4>
+<p>Your AWS access key ID. If you are unsure about what this is or how to get it,
+refer to <a href="https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys">Amazon's documentation on credentials</a>.</p>
+<p>This option is required.</p>
+<h4 id="secretaccesskey"><code>secretAccessKey</code><a class="headerlink" href="#secretaccesskey" title="Permanent link"></a></h4>
+<p>Your AWS secret access key. If you are unsure about what this is or how to get it,
+refer to <a href="https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys">Amazon's documentation on credentials</a>.</p>
+<p>This option is required.</p>
+<h4 id="bucket"><code>bucket</code><a class="headerlink" href="#bucket" title="Permanent link"></a></h4>
+<p>The name of the S3 bucket to store files in.</p>
+<p>This option is required.</p>
+<h4 id="expiration"><code>expiration</code><a class="headerlink" href="#expiration" title="Permanent link"></a></h4>
+<p>The number of minutes a URL is valid for.</p>
+<p>By default, this is infinite. Omeka will generate plain direct URLs to your files
+stored in S3, which means links that work as long as the file is still there. This
+requires the bucket to be configured so anonymous users can view the files.</p>
+<p>If you instead want to have a locked-down access policy, you can set this setting,
+which will cause Omeka to generate pre-signed URLs for files stored in S3. The
+effect is that links to files will only be valid for the configured number of
+minutes after the URL was created.</p>
+<h4 id="endpoint"><code>endpoint</code><a class="headerlink" href="#endpoint" title="Permanent link"></a></h4>
+<p>The S3 endpoint for the region your bucket is located in.</p>
+<p>By default, this is <code>s3.amazonaws.com</code>, the endpoint for the US-East (N. Virginia)
+region. If you're using a different region, you can set the correct endpoint for it
+here. Amazon's documentation lists the <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html#s3_region">S3 endpoints for different regions</a>.</p>
+<p><strong>Note:</strong> The ZendS3 adapter only supports "Version 2" authentication. Regions listed
+as "Version 4 only" in the linked table cannot be used with the ZendS3 adapter.</p>
+<h3 id="forcessl"><code>forceSSL</code><a class="headerlink" href="#forcessl" title="Permanent link"></a></h3>
+<p>This setting will use HTTPS urls for files stored in S3. It is useful to prevent mixed content errors/warnings when the Omeka site is accessed via HTTPS.</p>
+<h2 id="setting-the-temporary-directory">Setting the Temporary Directory<a class="headerlink" href="#setting-the-temporary-directory" title="Permanent link"></a></h2>
+<p>There is one storage option that is used regardless of the configured adapter:
+<code>storage.tempDir</code>.</p>
+<p>This option takes a local path to the directory Omeka should temporarily store
+files in while initially working on them. Omeka copies files here, and also
+performs operations like creating thumbnails here. Plugins that work with files
+as they're uploaded can also access files in this temporary directory.</p>
+<p>By default, this is the system default temporary directory, but on some systems
+that directory isn't accessible to Omeka and a different directory needs to be
+used. In those cases, set the appropriate path with <code>storage.tempDir</code> in the
+configuration file.</p>
+<p>Omeka needs to be able to read and write in this directory, just like in the
+storage <code>localDir</code>.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../ConfiguringThumbnailCreation/" class="btn btn-neutral float-right" title="Configuring Thumbnail Creation">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../Backing_up_an_Omeka_Database/" class="btn btn-neutral" title="Backing up an Omeka Classic Database"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  <p><a rel="license" href="http://creativecommons.org/licenses/by-nc/2.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/2.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/2.0/">Creative Commons Attribution-NonCommercial 2.0 Generic License</a>.</p>
+  <p>Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.</p>
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/omeka/classic-enduser/" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../Backing_up_an_Omeka_Database/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../ConfiguringThumbnailCreation/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

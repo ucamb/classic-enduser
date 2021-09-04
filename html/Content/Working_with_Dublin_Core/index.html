@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Working with Dublin Core - Omeka Classic User Manual</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  <link href="../../css/extra.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Working with Dublin Core";
+    var mkdocs_page_input_path = "Content/Working_with_Dublin_Core.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Omeka Classic User Manual</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <p class="caption"><span class="caption-text">Getting Started</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../GettingStarted/Site_Planning_Tips/">Site Planning Tips</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../GettingStarted/UsingOmeka/">Examples and Case Studies</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../GettingStarted/Hosting_Suggestions/">Hosting Suggestions</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../GettingStarted/Feature_List/">Feature List</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../GettingStarted/Accessibility_Statement/">Accessibility Statement</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../GettingStarted/Screencasts/">Screencasts</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../GettingStarted/Searching/">Searching</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Installing</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Installation/System_Requirements/">System Requirements</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Installation/Installation/">Installation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Installation/Upgrading/">Upgrading</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Installation/Configuring_Language/">Configuring Language</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Installation/Setting_Directory_Permissions/">Setting Directory Permissions</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Content</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../Items/">Items</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Files/">Files</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Working with Dublin Core</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#why-dublin-core">Why Dublin Core?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#interpreting-dublin-core-fields-in-omeka-classic">Interpreting Dublin Core Fields in Omeka Classic</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#title">Title</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#subject">Subject</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#description">Description</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#creator">Creator</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#source">Source</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#publisher">Publisher</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#date">Date</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#contributor">Contributor</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#rights">Rights</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#relation">Relation</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#format">Format</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#language">Language</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#type">Type</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#identifier">Identifier</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#coverage">Coverage</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Using_HTML_Editor-TinyMCE/">Using the HTML Editor</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Item_Types/">Item Types</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Collections/">Collections</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Tags/">Tags</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Shortcodes/">Shortcodes</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Administration</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Adding_and_Managing_Plugins/">Working with Plugins</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Appearance/Themes/">Themes</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Appearance/Navigation/">Navigation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Appearance/Appearance_Settings/">Appearance Settings</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Users/">Users</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Settings/General_Settings/">General Settings</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Settings/Security_Settings/">Security Settings</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Settings/Search_Settings/">Search Settings</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Settings/Element_Sets/">Element Sets</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Settings/Item_Type_Elements/">Item Type Elements</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Settings/API_Settings/">API Settings</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Admin/Settings/ReCaptcha/">ReCaptcha</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Plugins</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Coins/">Coins</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/CollectionTree/">Collection Tree</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Commenting/">Commenting</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Contribution/">Contribution</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/CSS_Editor/">CSS Editor</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/CSV_Import/">CSV Import</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/DerivativeImages/">Derivative Images</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/DocsViewer/">Docs Viewer</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Dropbox/">Dropbox</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/DublinCoreExtended/">Dublin Core Extended</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Editorial/">Editorial</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/EmbedCodes/">Embed Codes</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/ExhibitBuilder/">Exhibit Builder</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/ExhibitImageAnnotation/">Exhibit Image Annotation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Geolocation/">Geolocation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/GuestUser/">Guest User</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Heist/">Heist</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/ItemOrder/">Item Order</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/ItemRelations/">Item Relations</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Library_of_Congress_Suggest/">Library of Congress Suggest</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Ngram/">Ngram</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/OaipmhHarvester/">OAI-PMH Harvester</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/OaiPmhRepository/">OAI-PMH Repository</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Omeka_API_Import/">Omeka API Import</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/PBCore/">PBCore</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/PdfText/">PDF Text</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Plugin_Shortcodes/">Plugin Shortcodes</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Posters/">Posters</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/RecordRelations/">Record Relations</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/RedactElements/">Redact Elements</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Reports/">Reports</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/Scripto/">Scripto</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/SearchByMetadata/">Search by Metadata</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/ShortcodeCarousel/">Shortcode Carousel</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/SimpleContactForm/">Simple Contact Form</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/SimplePages/">Simple Pages</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/SimpleVocab/">Simple Vocab</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/SocialBookmarking/">Social Bookmarking</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/TextAnalysis/">Text Analysis</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/TextAnnotation/">Text Annotation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/UserProfiles/">User Profiles</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/VRACore/">VRA Core</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/ZoomIt/">ZoomIt</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Plugins/ZoteroImport/">Zotero Import</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Troubleshooting</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Troubleshooting/Troubleshooting_Omeka/">Troubleshooting</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Troubleshooting/Retrieving_Error_Messages/">Retreiving Error Messages</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Troubleshooting/Report-a-bug/">Report a Bug</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Technical</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/Adding_LightBox_to_Omeka/">Adding Lightbox to Omeka</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/Backing_up_an_Omeka_Database/">Backing up an Omeka Classic Database</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/Configuring_File_Storage/">Configuring File Storage</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/ConfiguringThumbnailCreation/">Configuring Thumbnail Creation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/Contribute_Code_to_Omeka/">Contribute Code to Omeka</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/DatabaseConfigurationFile/">Database Configuration File</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/Legacy_documentation/">Legacy Documentation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/Moving_to_Another_Server/">Moving to Another Server</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/Output_Formats/">Output Formats</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/Setting_PHP_Path/">Setting the PHP Path</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/Translate_Omeka/">Translate Omeka</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Technical/Using_Omeka_with_Other_Tools_and_Platforms/">Using Omeka with Other Tools and Platforms</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Omeka Classic User Manual</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Content &raquo;</li>
+        
+      
+    
+    <li>Working with Dublin Core</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/omeka/classic-enduser/edit/master/docs/Content/Working_with_Dublin_Core.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="working-with-dublin-core">Working with Dublin Core<a class="headerlink" href="#working-with-dublin-core" title="Permanent link"></a></h1>
+<h2 id="why-dublin-core">Why Dublin Core?<a class="headerlink" href="#why-dublin-core" title="Permanent link"></a></h2>
+<p>The Omeka team decided that we wanted to contribute to a movement that is helping to standardize data about digital objects. While there are different standards available, the Dublin Core Metadata Initiative is the most widely adopted and offers users the greatest flexibility.</p>
+<ul>
+<li><a href="http://dublincore.org/about/">Learn more about the Dublin Core Metadata Initiative</a></li>
+<li><a href="http://dublincore.org/documents/dces/">Dublin Core Metadata Element Set, Version 1.1: Reference Description</a></li>
+<li><a href="http://www.oclc.org/research/activities/past/orprojects/dublincore/default.htm">Historical overview and bibliography of Dublin Core resources (2010</a>.</li>
+</ul>
+<h2 id="interpreting-dublin-core-fields-in-omeka-classic">Interpreting Dublin Core Fields in Omeka Classic<a class="headerlink" href="#interpreting-dublin-core-fields-in-omeka-classic" title="Permanent link"></a></h2>
+<p>The following Dublin Core fields are available in Omeka, together with some suggestions on interpreting the fields. The fields are vague by design so please consult with the <a href="http://dublincore.org/documents/usageguide/elements.shtml">DCMI element descriptions</a> to be sure you are fulfilling the demands of your project. You may also want to review the detailed breakdown of <a href="../Item_Types/">item types</a> with examples and a list of their item type metadata elements.</p>
+<p>Read one example of Dublin Core interpretations from the <a href="https://www.digitalnc.org/partners/describing-your-materials/">North Carolina Exploring Culture and Heritage Online</a> project.</p>
+<h3 id="title">Title<a class="headerlink" href="#title" title="Permanent link"></a></h3>
+<p>A name given to the resource.</p>
+<p>Examples: title of a painting, photo, document; the name of a person when using the "person" item type; the name of a lesson plan</p>
+<h3 id="subject">Subject<a class="headerlink" href="#subject" title="Permanent link"></a></h3>
+<p>The topic of the resource.</p>
+<p>Typically, the topic will be represented using keywords, key phrases, or classification codes. Recommended best practice is to use a controlled vocabulary. To describe the spatial or temporal topic of the resource, use the Coverage element. Examples: Library of Congress subject headings; subject-specific nomenclature.</p>
+<h3 id="description">Description<a class="headerlink" href="#description" title="Permanent link"></a></h3>
+<p>An account of the resource.</p>
+<p>Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource. </p>
+<h3 id="creator">Creator<a class="headerlink" href="#creator" title="Permanent link"></a></h3>
+<p>An entity primarily responsible for making the resource.</p>
+<p>Examples: author; artist; photographer; institutional author or producer, such as university or federal agency</p>
+<h3 id="source">Source<a class="headerlink" href="#source" title="Permanent link"></a></h3>
+<p>The resource from which the described resource is derived.</p>
+<p>The described resource may be derived from the related resource in whole or in part. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system.</p>
+<p>For some examples se the Identifier field.</p>
+<h3 id="publisher">Publisher<a class="headerlink" href="#publisher" title="Permanent link"></a></h3>
+<p>An entity responsible for making the resource available.</p>
+<p>Examples: actual publisher, if there is one; entity or consortium publishing digital materials</p>
+<h3 id="date">Date<a class="headerlink" href="#date" title="Permanent link"></a></h3>
+<p>A point or period of time associated with an event in the lifecycle of the resource.</p>
+<p>Date may be used to express temporal information at any level of granularity. Recommended best practice is to use an encoding scheme, such as the <a href="https://www.w3.org/TR/NOTE-datetime">W3CDTF</a> profile of <a href="https://www.iso.org/iso-8601-date-and-time-format.html">ISO 8601</a>.</p>
+<p>Date can be one of the trickiest fields to fill. You will want to decide how best to use it for your project for consistency. Where possible, a structured date such as YYYY-MM-DD for a specific day or YYYY for a specific year is preferred, but other formats or levels of specificity can be used (such as "circa 1940").</p>
+<h3 id="contributor">Contributor<a class="headerlink" href="#contributor" title="Permanent link"></a></h3>
+<p>An entity responsible for making contributions to the resource.</p>
+<p>Entries here should be akin to the Creator field, but for entities that made a less significant or unknown contribution.</p>
+<h3 id="rights">Rights<a class="headerlink" href="#rights" title="Permanent link"></a></h3>
+<p>Information about rights held in and over the resource.</p>
+<p>Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights.</p>
+<p>Examples: spell out conditions of use for specific items here; Creative Commons or other specific license; Public Domain.</p>
+<h3 id="relation">Relation<a class="headerlink" href="#relation" title="Permanent link"></a></h3>
+<p>A related resource.</p>
+<p>Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system.</p>
+<p>Examples: a still image of a person entered as a "person" type.</p>
+<h3 id="format">Format<a class="headerlink" href="#format" title="Permanent link"></a></h3>
+<p>The file format, physical medium, or dimensions of a resource.</p>
+<p>Examples: the <a href="https://www.iana.org/assignments/media-types/media-types.xhtml">Internet media type</a> of a digital file; the physical size of an object; the duration of a film or audio clip; or the medium of a work of art</p>
+<h3 id="language">Language<a class="headerlink" href="#language" title="Permanent link"></a></h3>
+<p>A language of the resource.</p>
+<p><a href="https://www.w3.org/International/articles/language-tags/">BCP 47</a> language tags are the suggested standard.</p>
+<h3 id="type">Type<a class="headerlink" href="#type" title="Permanent link"></a></h3>
+<p>The nature or genre of the resource.</p>
+<p>Recommended best practice is to use a controlled vocabulary such as the <a href="http://dublincore.org/documents/dcmi-terms/#section-7">DCMI Type Vocabulary</a>. To describe the file format, physical medium, or dimensions of the resource, use the Format element.</p>
+<h3 id="identifier">Identifier<a class="headerlink" href="#identifier" title="Permanent link"></a></h3>
+<p>An unambiguous reference to the resource within a given context.</p>
+<p>Recommended best practice is to identify the resource by means of a string conforming to a formal identification system.</p>
+<p>Examples: a URL, an ISBN, a catalog number</p>
+<h3 id="coverage">Coverage<a class="headerlink" href="#coverage" title="Permanent link"></a></h3>
+<p>The spatial or temporal topic of the resource, the spatial applicability of the resource, or the jurisdiction under which the resource is relevant.</p>
+<p>Spatial topic and spatial applicability may be a named place or a location specified by its geographic coordinates. Temporal topic may be a named period, date, or date range. A jurisdiction may be a named administrative entity or a geographic place to which the resource applies.</p>
+<p>Recommended best practice is to use a controlled vocabulary such as the <a href="http://www.getty.edu/research/tools/vocabularies/tgn/index.html">Thesaurus of Geographic Names (TGN)</a>. Where appropriate, named places or time periods can be used in preference to numeric identifiers such as sets of coordinates or date ranges.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Using_HTML_Editor-TinyMCE/" class="btn btn-neutral float-right" title="Using the HTML Editor">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../Files/" class="btn btn-neutral" title="Files"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  <p><a rel="license" href="http://creativecommons.org/licenses/by-nc/2.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/2.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/2.0/">Creative Commons Attribution-NonCommercial 2.0 Generic License</a>.</p>
+  <p>Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.</p>
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/omeka/classic-enduser/" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../Files/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../Using_HTML_Editor-TinyMCE/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
